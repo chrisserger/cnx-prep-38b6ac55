@@ -78,6 +78,9 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
 .cue__action { font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); opacity: 0.8; flex-shrink: 0; }
 .cue__title { font-family: var(--font-display); font-size: 19px; font-weight: 700; color: white; line-height: 1.2; }
 .cue__title em { font-family: var(--font-serif); font-style: italic; color: var(--accent); font-weight: 400; }
+.cue__thumb { flex-shrink: 0; width: 220px; height: auto; border-left: 1px solid rgba(255,182,27,0.4); align-self: stretch; object-fit: cover; display: block; }
+.cue--demo .cue__thumb { border-left-color: rgba(207,233,254,0.4); }
+@media (max-width: 760px) { .cue__thumb { display: none; } }
 
 .cue--beat { background: rgba(255,255,255,0.03); border: 1px dashed rgba(255,255,255,0.18); border-radius: 8px; padding: 10px 16px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); display: flex; align-items: center; gap: 10px; }
 .cue--beat::before { content: '⏸'; font-size: 11px; }
@@ -181,19 +184,19 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       <div class="block__time"><strong>2:00–7:00</strong><br>5 min</div>
     </div>
 
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">1</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Open on</div><div class="cue__title">Hero · Welcome &amp; intros</div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">1</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Open on</div><div class="cue__title">Hero · Welcome &amp; intros</div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-01.png" alt="Slide 1 preview"></div>
     <div class="script">
       <p>Good afternoon. I'm Chris Serger, <strong>VP of Solutions Engineering</strong> for Salesforce's digital portfolio — <em>Commerce Cloud, Marketing Cloud, Revenue Cloud</em> — across retail, consumer goods, manufacturing, automotive and energy.</p>
       <p>My team's job is to <strong>connect the technical dots</strong> of the ever-growing and ever-evolving Salesforce platform — and align them to our customers' business challenges and goals. Today we're going to do exactly that around one of the harder questions in our industry right now — <strong>agentic AI in luxury.</strong></p>
     </div>
 
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">2</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">The number — <em>70M</em> luxury customers lost</div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">2</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">The number — <em>70M</em> luxury customers lost</div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-02.png" alt="Slide 2 preview"></div>
     <div class="script">
       <p>This is the number that changes the conversation.</p>
       <p><strong>70 million.</strong> That's how many luxury customers have walked away from the category in the last 2 years. <strong>Bain and Altagamma</strong> flagged it last month. The active luxury client base went from 400M at its peak in 2022 to 330M today — back to 2013 levels.</p>
     </div>
 
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">3</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">The math has changed — <em>top 2%</em> drives 45-47%</div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">3</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">The math has changed — <em>top 2%</em> drives 45-47%</div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-03.png" alt="Slide 3 preview"></div>
     <div class="script">
       <p>And while that contraction was happening at the front door, something else was happening inside the store. The top 2% — what Bain calls the Very Important Customers — now drives <strong>45 to 47%</strong> of all luxury purchases. Half the category, from a sliver of the base.</p>
       <p>And the customers who walked? Aspirational and younger shoppers. <strong>Gen Z is sitting out at twice the rate of millennials</strong> at the same age. Price escalation, fading brand advocacy. The base aged up while the door narrowed.</p>
@@ -205,7 +208,7 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       <p><strong>White-glove concierge — at software scale.</strong> Autonomously engaging every shopper as an individual, at the moment of intent.</p>
     </div>
 
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">4</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Why now — <em>3 forces converging</em></div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">4</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Why now — <em>3 forces converging</em></div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-04.png" alt="Slide 4 preview"></div>
     <div class="script">
       <p>Three forces are converging at the same time, and they are why this session is happening this week and not a year from now.</p>
       <p><strong>Customer behavior flipped.</strong> 20% of all retail sales over the 2025 holidays were AI- and agent-driven. $262 billion in revenue. Not a projection — the post-recap actual from January.</p>
@@ -217,7 +220,7 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       <p>And <strong>Agentforce</strong> keeps maturing. We'll show you exactly what that means in a live luxury context in about 4 minutes.</p>
     </div>
 
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">5</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Rufus retired — <em>Andy Jassy</em> quote</div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">5</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Rufus retired — <em>Andy Jassy</em> quote</div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-05.png" alt="Slide 5 preview"></div>
     <div class="script">
       <p>I want to mark one more thing before we get to the demo, because it happened earlier this month.</p>
       <p>Amazon retired Rufus. Folded it into Alexa for Shopping. Andy Jassy, Amazon's CEO — his reason was the cleanest argument I have heard for where the agent has to live.</p>
@@ -228,7 +231,7 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       <p>In luxury, that line lands twice as hard. Your customer does not toggle between an AI tab and your brand. <strong>The agent has to live where the brand lives. Voiced like the brand. Accountable to the brand.</strong></p>
     </div>
 
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">6</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Brands shipping — <em>Cucinelli · Chalhoub · Zegna</em></div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">6</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Brands shipping — <em>Cucinelli · Chalhoub · Zegna</em></div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-06.png" alt="Slide 6 preview"></div>
     <div class="script">
       <p>The brands actually shipping prove it works.</p>
       <p><strong>Brunello Cucinelli</strong> — Executive Chairman and Creative Director — launched <strong>Callimacus</strong> this January. <strong>4 named agents.</strong> <strong>10K-12K daily queries</strong> across IT, US, UK. 70% of boutique visitors browse it before they walk in. His framing — <em>"AI must remain profoundly human. A handmaid of humanity."</em></p>
@@ -254,8 +257,8 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       </div>
       <div class="block__time"><strong>7:00–22:00</strong><br>15 min</div>
     </div>
-    <div class="cue cue--demo"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">7</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Cut to Tony</div><div class="cue__title">Handoff slide — <em>The boutique advisor, online</em></div></div></div>
-    <div class="cue cue--demo"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">8</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Tony advances to</div><div class="cue__title">Demo roadmap — <em>3 modes, one customer</em></div></div></div>
+    <div class="cue cue--demo"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">7</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Cut to Tony</div><div class="cue__title">Handoff slide — <em>The boutique advisor, online</em></div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-07.png" alt="Slide 7 preview"></div>
+    <div class="cue cue--demo"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">8</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Tony advances to</div><div class="cue__title">Demo roadmap — <em>3 modes, one customer</em></div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-08.png" alt="Slide 8 preview"></div>
     <div class="tony-note">
       <div class="tony-note__chip">Tony drives</div>
       <div class="tony-note__title">7:00–15:00 — Frame the demo + What is AI Retail Advisor?</div>
@@ -279,7 +282,7 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       <div class="block__time"><strong>22:00–28:00</strong><br>6 min</div>
     </div>
 
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">9</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Architecture — <em>3 layers</em> (post-demo)</div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">9</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Architecture — <em>3 layers</em> (post-demo)</div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-09.png" alt="Slide 9 preview"></div>
     <div class="script">
       <p>Thanks Tony. What you just saw runs in the browser. The part that decides whether a luxury brand can put it in production lives underneath.</p>
       <p>Three layers.</p>
@@ -289,7 +292,7 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       <p>Today we focus on Commerce Cloud. Marketing Cloud is in the same journey.</p>
     </div>
 
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">10</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Commerce Cloud — <em>where the conversation closes</em></div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">10</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Commerce Cloud — <em>where the conversation closes</em></div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-10.png" alt="Slide 10 preview"></div>
     <div class="script">
       <p>The agent doesn't sit next to the storefront. <em>It sits inside it.</em></p>
       <p>That's the architectural difference. Catalog, pricing, inventory, promotions, orders, payments — every piece the agent needs to actually transact lives natively in Commerce Cloud. Most "AI commerce agents" sit on top of the storefront. Ours runs inside it.</p>
@@ -300,7 +303,7 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       <p style="font-style:italic;color:#0047D4">No middleware. Native pipe. Commerce-as-platform, not commerce-as-bolt-on.</p>
     </div>
 
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">11</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Pandora — <em>Clara + Gemma</em></div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">11</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Pandora — <em>Clara + Gemma</em></div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-11.png" alt="Slide 11 preview"></div>
     <div class="script">
       <p>Pandora — world's largest jewelry brand. Accessible luxury at scale. <strong>100+ countries</strong>, <strong>3 pieces of jewelry sold every second.</strong></p>
       <p>David Walmsley, Pandora's Chief Digital and Technology Officer, set the challenge — <em>could we build the best online sales associate, on Agentforce?</em></p>
@@ -310,7 +313,7 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       <p>Walmsley — <em>"this is the internet again. This is electricity. It's that level of change."</em></p>
     </div>
 
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">12</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Williams-Sonoma — <em>Olive</em> · 60 days</div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">12</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Williams-Sonoma — <em>Olive</em> · 60 days</div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-12.png" alt="Slide 12 preview"></div>
     <div class="script">
       <p><strong>Olive isn't luxury</strong> — and I'll say that on the record. Williams-Sonoma is mid-market home. But the architecture scales <strong>1:1 to your category.</strong></p>
       <p><strong>60 days</strong> kickoff to live. <strong>10K conversations</strong> a day. <strong>65% autonomous resolution.</strong> <strong>25% MoM</strong> growth.</p>
@@ -318,7 +321,7 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       <p>Replace <em>"plan my dinner party"</em> with <em>"plan my anniversary trip."</em> Same architectural pattern. The agent surfaces the right product. <strong>Data Cloud</strong> grounds the relationship. The human closes.</p>
     </div>
 
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">13</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Trust Layer — <em>governance is the whole game</em> (Perplexity ruling)</div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">13</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Trust Layer — <em>governance is the whole game</em> (Perplexity ruling)</div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-13.png" alt="Slide 13 preview"></div>
     <div class="script">
       <p>And now the part that for luxury, in my opinion, is the whole game.</p>
       <p><em>Governance.</em></p>
@@ -327,7 +330,7 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       <p style="font-style:italic;color:#0047D4">The agent has access to everything about your customer. <strong>Governance decides what it actually does.</strong> That's the difference between a brand that put AI in production safely — and one in court.</p>
     </div>
 
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">14</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Trust Layer — <em>4 things</em> stack</div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">14</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Trust Layer — <em>4 things</em> stack</div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-14.png" alt="Slide 14 preview"></div>
     <div class="script">
       <p>4 things the Salesforce Trust Layer does that other platforms don't.</p>
     </div>
@@ -352,7 +355,7 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       </div>
       <div class="block__time"><strong>28:00–34:00</strong><br>6 min</div>
     </div>
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">15</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Two moves to make Monday</div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">15</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Two moves to make Monday</div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-15.png" alt="Slide 15 preview"></div>
     <div class="script">
       <p>One last frame. <em>This is an activation. Not a rip-and-replace.</em> Two moves to make Monday.</p>
       <p><strong>One — audit your luxury journey.</strong> Pick the moments that break today. Anniversary gift. Made-to-measure handoff. Clienteling memory. Post-purchase concierge. Name the gap before you name the platform.</p>
@@ -463,7 +466,7 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
       </div>
       <div class="block__time"><strong>38:00–40:00</strong><br>2 min</div>
     </div>
-    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">16</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Close — <em>Room 270</em></div></div></div>
+    <div class="cue"><div class="cue__num"><div class="cue__num-lbl">Slide</div><div class="cue__num-val">16</div><div class="cue__num-of">of 16</div></div><div class="cue__body"><div class="cue__action">Advance to</div><div class="cue__title">Close — <em>Room 270</em></div></div><img class="cue__thumb" src="assets/cnx-2026/slide-thumbs/slide-16.png" alt="Slide 16 preview"></div>
     <div class="script">
       <p>One line. Other platforms add an AI system you have to govern alongside everything else. Salesforce makes the agent another user — same permissions, same audit trail, same compliance boundary you already trust.</p>
       <p><em>If your boutique advisor is the bar, that's the only architecture that clears it.</em></p>
