@@ -123,11 +123,58 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
   .cue { background: #fff8e0; color: #8a6a3c; }
 }
 
+/* ===== MOBILE TELEPROMPTER MODE — running from phone on stage ===== */
 @media (max-width: 760px) {
-  .wrap { padding: 20px; }
-  .block { padding: 22px 24px; }
-  .block__title { font-size: 24px; }
-  .script { font-size: 17px; }
+  body { padding-bottom: 40px; }
+
+  /* trim chrome — reclaim vertical space */
+  .bar { padding: 10px 0; }
+  .bar__inner { padding: 0 16px; gap: 10px; }
+  .bar__meta { display: none; }                 /* date/slot/stage — not needed live */
+  .bar__title { font-size: 13px; }
+  .bar__link { padding: 6px 12px; font-size: 11px; }
+  .tl-nav { display: none; }                     /* timeline pill rail — eats space, skip live */
+
+  .wrap { padding: 12px; gap: 14px; }
+  .block { padding: 18px 16px; border-radius: 10px; }
+  .block__head { margin-bottom: 6px; padding-bottom: 12px; gap: 6px; }
+  .block__owner { font-size: 10px; letter-spacing: 2px; }
+  .block__title { font-size: 21px; }
+  .block__time { font-size: 11px; }
+  .block__words { display: none; }
+
+  /* CUE — compact bar pins to top of viewport so the slide # + preview
+     stay visible the whole time you read that section's script below it */
+  .cue { flex-direction: column; align-items: stretch; margin: 22px 0 14px; position: sticky; top: 50px; z-index: 30; box-shadow: 0 6px 18px rgba(0,0,0,0.4); }
+  /* number + title = the always-visible bar, on top */
+  .cue__num { order: 0; flex-direction: row; gap: 8px; min-width: 0; width: 100%; padding: 9px 14px; justify-content: flex-start; align-items: baseline; }
+  .cue__num-lbl { font-size: 11px; margin-bottom: 0; }
+  .cue__num-val { font-size: 26px; }
+  .cue__num-of { font-size: 12px; margin-top: 0; margin-left: 2px; }
+  .cue__body { order: 1; padding: 10px 16px; gap: 8px; flex-wrap: wrap; }
+  .cue__action { font-size: 10px; }
+  .cue__title { font-size: 17px; }
+  /* compact slide preview under the title — small so sticky bar stays short */
+  .cue__thumb { display: block; order: 2; width: 100%; height: auto; max-height: 96px; object-fit: cover; object-position: top; border-left: none; border-top: 1px solid rgba(255,182,27,0.4); }
+  .cue--demo .cue__thumb { border-top-color: rgba(207,233,254,0.4); }
+
+  /* SCRIPT — the part you actually read on stage: BIG + airy */
+  .script { font-size: 22px; line-height: 1.65; padding: 0 2px; }
+  .script p { margin-bottom: 18px; }
+  .script .quote { font-size: 26px; padding: 16px 18px; }
+
+  .tony-note { padding: 18px 12px; }
+  .tony-note__title { font-size: 20px; }
+  .tony-note__sub { font-size: 15px; }
+
+  .cue--beat { font-size: 12px; padding: 8px 12px; }
+
+  /* QA — collapse padding, readable */
+  .qa-item { padding: 14px 14px; }
+  .qa-item__q { font-size: 16px; }
+  .qa-item__a { font-size: 16px; line-height: 1.6; }
+
+  .fab { bottom: 16px; right: 16px; padding: 12px 18px; font-size: 12px; }
 }
 </style>
 </head>
